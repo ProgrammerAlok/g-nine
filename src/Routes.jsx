@@ -10,10 +10,11 @@ import LandingPageFive from "pages/LandingPageFive";
 import LandingPageTwo from "pages/LandingPageTwo";
 import LandingPageThree from "pages/LandingPageThree";
 import LandingPageSix from "pages/LandingPageSix";
+import HomeLayout from "layout/HomeLayout";
 
 const ProjectRoutes = () => {
   let element = useRoutes([
-    { path: "/", element: <Home /> },
+    { path: "/", element: <HomeLayout /> },
     { path: "*", element: <NotFound /> },
     {
       path: "landingpageone",

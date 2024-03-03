@@ -6,7 +6,7 @@ const HomeBanner = ({
     NavItem
 }) => {
   return (
-    <div className="home-banner-wrapper h-screen md:h-[] ">
+    <div className="home-banner-wrapper h-[45rem] ">
       <div className="max-w-[1440px] w-[90%] mx-auto ">
         <nav className="flex w-[60%] py-2">
           <div>

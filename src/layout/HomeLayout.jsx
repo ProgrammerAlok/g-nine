@@ -4,6 +4,8 @@ import React from "react";
 import "./style.css";
 import { HomeBanner } from "components/Home";
 import { NavLink } from 'react-router-dom';
+import Footer from "components/Footer";
+import { Helmet } from "react-helmet";
 
 const HomeLayout1 = ({ title }) => {
   return (
@@ -206,7 +208,7 @@ const HomeLayout1 = ({ title }) => {
   );
 };
 
-const HomeLayout = () => {
+const HomeLayout = ({ title }) => {
 
   const NavItem = () => {
     const Data = [
@@ -239,7 +241,20 @@ const HomeLayout = () => {
   }  
 
   return (
-    <HomeBanner NavItem={NavItem}  />
+    <>
+      <Helmet>
+        <title>{title || 'GN'} - G Nine</title>         
+      </Helmet>
+      <HomeBanner NavItem={NavItem}  />
+
+
+      <div>
+        asdfsfsa
+      </div>
+
+
+      <Footer />    
+    </>
   );
 };
 

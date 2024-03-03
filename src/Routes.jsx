@@ -14,7 +14,7 @@ import HomeLayout from "layout/HomeLayout";
 
 const ProjectRoutes = () => {
   let element = useRoutes([
-    { path: "/", element: <HomeLayout /> },
+    { path: "/", element: <HomeLayout title={'Home'} /> },
     { path: "*", element: <NotFound /> },
     {
       path: "landingpageone",

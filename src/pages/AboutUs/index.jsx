@@ -1,11 +1,11 @@
+import { NavBar, NavItems } from 'components/Nav'
 import MainLayout from 'layout/MainLayout'
-import React from 'react'
 
 const AboutUs = () => {
   return (
-    <MainLayout title={`About Us`} image={``}>
+    <MainLayout title={`About Us`} image={``} NavBar={NavBar} NavItems={NavItems}>
         <main>
-            
+            sdfsdfs
         </main>
     </MainLayout>
   )

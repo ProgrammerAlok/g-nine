@@ -3,25 +3,14 @@ import { Button, Heading, Img, Text } from "components";
 import "./style.css";
 
 const HomeBanner = ({
-    NavItem
+  NavBar,
+  NavItems
 }) => {
   return (
-    <div className="home-banner-wrapper h-[45rem] ">
-      <div className="max-w-[1440px] w-[90%] mx-auto ">
-        <nav className="flex w-[60%] py-2">
-          <div>
-            <Img
-              src="images/img_image_1.png"
-              alt="imageone_one"
-              className="w-[30%] aspect-auto object-cover"
-            />
-          </div>
-          <div className="ml-[-5rem] h-full my-auto w-full">
-            <ul className="flex justify-center items-center gap-6">
-              <NavItem />
-            </ul>
-          </div>
-        </nav>
+    <div className="home-banner-wrapper h-[45rem] overflow-hidden ">
+      <div className="max-w-[1440px] w-[90%] mx-auto  ">
+
+        <NavBar NavItems={NavItems} />
 
         <div className="relative">
 

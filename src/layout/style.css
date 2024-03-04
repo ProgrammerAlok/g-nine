@@ -1,0 +1,9 @@
+.home-banner-wrapper {
+    width: 100vw;
+    background-image: 
+        url(/public/images/img_div_bg_image_1000x697.png),
+        url(/public/images/img_div_bg_image_822x1223.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right, left;
+    background-size: 40%, 85.4%;
+}

@@ -1,11 +1,9 @@
-import { Button, Heading, Img, Text } from "components";
-import C1LandingPageOneRowTwo from "components/C1LandingPageOneRowTwo";
-import React from "react";
 import "./style.css";
+import { Img } from "components";
 import { HomeBanner } from "components/Home";
-import { NavLink } from 'react-router-dom';
 import Footer from "components/Footer";
 import { Helmet } from "react-helmet";
+import { NavItems, NavBar } from "components/Nav";
 
 const HomeLayout1 = ({ title }) => {
   return (
@@ -210,43 +208,13 @@ const HomeLayout1 = ({ title }) => {
 
 const HomeLayout = ({ title }) => {
 
-  const NavItem = () => {
-    const Data = [
-      `Home`,
-      `About Us`,
-      `Rooms`,
-      `Banquet`,
-      `Restaurant`,
-      `Events`,
-      `FAQ's`,
-      `Contact Us`,
-    ].map((item, ind) => ({
-      title: item,
-      path: `/${(ind===0)?'':item.split(' ').join('').toLowerCase()}`
-    }));
-
-    return (
-      <>        
-        {Data.map(({title, path}, key) => (
-          <li key={key} className="">
-            <NavLink to={path} >
-              <Text as="p" className="text-gray-300_04">
-                {title}
-              </Text>
-            </NavLink>
-          </li>
-        ))}        
-      </>
-    );
-  }  
-
   return (
     <>
       <Helmet>
         <title>{title || 'GN'} - G Nine</title>         
       </Helmet>
-      <HomeBanner NavItem={NavItem}  />
-
+      <HomeBanner NavBar={NavBar} NavItems={NavItems} />
+      
 
       <div>
         asdfsfsa

@@ -1,4 +1,4 @@
-// export {} from './AboutUs';
+// export { default as Home } from './Home';
 export { default as AboutUs } from './AboutUs';
 export { default as Rooms } from './Rooms';
 export { default as Banquet } from './Banquet';

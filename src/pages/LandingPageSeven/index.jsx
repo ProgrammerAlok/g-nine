@@ -102,6 +102,8 @@ export default function LandingPageSevenPage() {
                 />
               </div>
             </div>
+
+            
             <div className="flex flex-row justify-between items-center w-full mt-[-1px] max-w-[1555px]">
               <Img src="images/img_pngwing_4.png" alt="pngwingfour_one" className="w-[41%] object-cover" />
               <div className="flex flex-col items-start justify-start w-[53%] gap-2.5">
@@ -117,6 +119,8 @@ export default function LandingPageSevenPage() {
                 </Text>
               </div>
             </div>
+
+
             <div className="flex flex-row justify-start items-center w-full mt-[120px] gap-[19px] max-w-[1554px]">
               <div className="flex flex-col items-start justify-start w-[53%] gap-2.5">
                 <Heading size="2xl" as="h4">
@@ -133,6 +137,8 @@ export default function LandingPageSevenPage() {
               </div>
               <Img src="images/img_pngwing_6.png" alt="pngwingsix_one" className="w-[46%] object-cover" />
             </div>
+
+
           </div>
         </div>
         <Footer className="flex justify-center items-center w-full" />

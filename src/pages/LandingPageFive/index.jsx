@@ -56,6 +56,9 @@ export default function LandingPageFivePage() {
                 className="h-44 w-[11%] bottom-[4%] right-0 m-auto object-cover absolute"
               />
             </div>
+
+
+            
             <Heading as="h2" className="mt-[114px]">
               Hotel G Nine Surat
             </Heading>
@@ -95,6 +98,8 @@ export default function LandingPageFivePage() {
                 </div>
               </div>
             </div>
+
+
             <Heading as="h3" className="mt-[123px]">
               Restaurant Gallery
             </Heading>
@@ -136,6 +141,8 @@ export default function LandingPageFivePage() {
                 </div>
               </div>
             </div>
+
+
           </div>
         </div>
         <footer className="flex justify-center items-center w-full">

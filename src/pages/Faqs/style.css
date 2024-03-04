@@ -1,0 +1,24 @@
+
+.accordion, .accordion span {
+    border: transparent;
+}
+
+.accordion__button {
+    width: 100%;
+}
+
+.accordion__button,
+.accordion__panel {
+    color: #7F7F7F;
+    background: #FFFFFF;
+    margin: 0.5rem 0;
+    border: transparent;
+}
+
+.accordion__button[aria-expanded="true"] > span {
+    color: #FF8825 !important;
+}
+
+.accordion__button[aria-expanded="true"] {
+    color: #FF8825 !important;
+}

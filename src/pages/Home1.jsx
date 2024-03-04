@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const Home = () => {
+const Home1 = () => {
   return (
     <div style={{ height: "100vh", padding: "20px", backgroundColor: "#232323", color: "white" }}>
       <h1 style={{ fontSize: "48px", marginBottom: "20px" }}>Homepage</h1>
@@ -56,4 +56,4 @@ const Home = () => {
     </div>
   );
 };
-export default Home;
+export default Home1;

@@ -1,6 +1,9 @@
 module.exports = {
   mode: "jit",
-  content: ["./src/**/**/*.{js,ts,jsx,tsx,html,mdx}", "./src/**/*.{js,ts,jsx,tsx,html,mdx}"],
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}", 
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
   darkMode: "class",
   theme: {
     screens: { md: { max: "1050px" }, sm: { max: "550px" } },
@@ -36,5 +39,7 @@ module.exports = {
       opacity: { 0.9: 0.9, 0.3: 0.3, 0.5: 0.5, 0.2: 0.2 },
     },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [
+    require("@tailwindcss/forms"),
+  ],
 };

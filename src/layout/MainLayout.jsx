@@ -56,7 +56,7 @@ const Banner = ({ title, image }) => {
           />
         </div>
       </div>
-      <div className=" mb-[20%] " />
+      <div className=" mb-[18rem] " />
     </div>
   );
 };

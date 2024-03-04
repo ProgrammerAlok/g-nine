@@ -1,6 +1,6 @@
 import React from "react";
 import { useRoutes } from "react-router-dom";
-import Home from "pages/Home";
+import Home1 from "pages/Home1";
 import NotFound from "pages/NotFound";
 import LandingPageOne from "pages/LandingPageOne";
 import LandingPageSeven from "pages/LandingPageSeven";
@@ -11,12 +11,12 @@ import LandingPageTwo from "pages/LandingPageTwo";
 import LandingPageThree from "pages/LandingPageThree";
 import LandingPageSix from "pages/LandingPageSix";
 import HomeLayout from "layout/HomeLayout";
-import { AboutUs, Banquet, ContactUs, Events, Faqs, Restaurant, Rooms } from "pages";
+import { Home, AboutUs, Banquet, ContactUs, Events, Faqs, Restaurant, Rooms } from "pages";
 
 const ProjectRoutes = () => {
   let element = useRoutes([
-    // { path: "/", element: <Home /> },
-    { path: "/", element: <HomeLayout title={'Home'} /> },
+    { path: "/", element: <Home /> },
+    // { path: "/", element: <Home1 /> },
     { path: "/aboutus", element: <AboutUs /> },
     { path: "/rooms", element: <Rooms /> },
     { path: "/banquet", element: <Banquet /> },

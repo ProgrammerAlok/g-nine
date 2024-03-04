@@ -7,6 +7,13 @@
     width: 100%;
 }
 
+.faq-container {
+    background-image: url(/public/images/faqs-bg.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+
 .accordion__button,
 .accordion__panel {
     color: #7F7F7F;

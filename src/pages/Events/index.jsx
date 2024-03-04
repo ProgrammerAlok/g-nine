@@ -1,13 +1,14 @@
-import MainLayout from 'layout/MainLayout';
+import { Heading, Img } from "components";
+import MainLayout from "layout/MainLayout";
 
 const Events = () => {
   return (
-    <MainLayout title={`Events`} image='' >
-        <main>
-            
-        </main>
+    <MainLayout title={`Events`} image="">
+      <main>
+        
+      </main>
     </MainLayout>
-  )
-}
+  );
+};
 
-export default Events
+export default Events;

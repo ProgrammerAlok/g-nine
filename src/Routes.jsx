@@ -11,13 +11,19 @@ import LandingPageTwo from "pages/LandingPageTwo";
 import LandingPageThree from "pages/LandingPageThree";
 import LandingPageSix from "pages/LandingPageSix";
 import HomeLayout from "layout/HomeLayout";
-import AboutUs from "pages/AboutUs";
+import { AboutUs, Banquet, ContactUs, Events, Faqs, Restaurant, Rooms } from "pages";
 
 const ProjectRoutes = () => {
   let element = useRoutes([
     // { path: "/", element: <Home /> },
     { path: "/", element: <HomeLayout title={'Home'} /> },
     { path: "/aboutus", element: <AboutUs /> },
+    { path: "/rooms", element: <Rooms /> },
+    { path: "/banquet", element: <Banquet /> },
+    { path: "/restaurant", element: <Restaurant /> },
+    { path: "/events", element: <Events /> },
+    { path: "/faq's", element: <Faqs /> },
+    { path: "/contactus", element: <ContactUs /> },
 
 
     { path: "*", element: <NotFound /> },

@@ -1,9 +1,8 @@
-import { NavBar, NavItems } from 'components/Nav'
 import MainLayout from 'layout/MainLayout'
 
 const AboutUs = () => {
   return (
-    <MainLayout title={`About Us`} image={``} NavBar={NavBar} NavItems={NavItems}>
+    <MainLayout title={`About Us`} image={``} >
         <main>
             sdfsdfs
         </main>

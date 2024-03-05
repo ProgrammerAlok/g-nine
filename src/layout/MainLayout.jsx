@@ -7,7 +7,7 @@ import "./style.css";
 const MainLayout = ({
   children,
   title,
-  image = `images/img_pngwing_7.png`,
+  image = `images/about-banner-image.svg`,
 }) => {
   return (
     <>
@@ -24,7 +24,7 @@ const MainLayout = ({
 const Banner = ({ title, image }) => {
   return (
     <div>
-      <div className="home-banner-wrapper h-[30rem] relative ">
+      <div className="home-banner-wrapper h-[30rem] relative md:h-[15rem] ">
         <div className="max-w-[1440px] w-[90%] mx-auto ">
           {/* nav */}
           <NavBar NavItems={NavItems} />
@@ -37,18 +37,20 @@ const Banner = ({ title, image }) => {
             <Img
               src="images/img_vector_amber_a700.svg"
               alt="vector_one"
-              className="h-[15px] mt-2 mr-auto"
+              className="h-[15px] md:h-[0.4rem] mt-2 mr-auto md:mr-0"
             />
           </div>
 
           {/* image div */}
-          <div className="absolute bottom-[-35%] right-[40%] z-10 ">
+          <div className=" relative bottom-[-35%] z-10 ">
             <Img
               src="images/img_pngwing_7.png"
               alt="food image"
-              className="h-[23rem]"
+              className="h-[23rem] md:h-[10rem] mx-auto mt-[15rem] md:mt-[5rem]"
             />
           </div>
+
+          {/* corner image */}
           <Img
             src="images/img_section_divider1_png_59x1920.png"
             alt="section_three"
@@ -56,7 +58,7 @@ const Banner = ({ title, image }) => {
           />
         </div>
       </div>
-      <div className=" mb-[18rem] " />
+      <div className=" mb-[18rem] md:mb-[8rem] " />
     </div>
   );
 };

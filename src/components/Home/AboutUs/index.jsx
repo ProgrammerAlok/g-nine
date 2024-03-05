@@ -2,20 +2,38 @@ import { Button, Heading, Img, Text } from "components";
 
 const AboutUs = () => {
   return (
-    <div className="relative mt-[40rem] ">
-      <div className="flex flex-col items-start justify-start w-[30%] bottom-[1%] right-[13%] m-auto absolute">
-        <div className="flex flex-row justify-between items-center w-[34%]">
+    <div className=" max-w-[1440px] w-[90%] mx-auto flex md:flex-col justify-between items-center ">
+      {/* left */}
+      <div className="flex flex-row justify-start w-[48%] md:w-full left-[3%]">
+        <div className="flex justify-center items-center w-full ">
+          <Img
+            src="images/img_about_6_1_png.png"
+            alt="about61png_one"
+            className="w-[50%] object-cover "
+          />
+          <Img
+            src="images/img_about_6_2_png.png"
+            alt="about62png_one"
+            className="w-[50%] object-cover ml-[-15%] "
+          />
+        </div>
+      </div>
+
+      {/* right */}
+      <div className="flex flex-col items-start justify-start w-[48%] md:w-full">
+        <div className="flex justify-start items-center w-full gap-4">
           <Img src="images/img_svg.svg" alt="svg_one" className="h-[39px]" />
           <Text
             size="xl"
             as="p"
-            className="!text-blue_gray-900_01 !font-inter !font-medium"
+            className="!text-blue_gray-900_01  !font-medium !text-[22px] !leading-[26.63px] md:text-[16px] md:leading-[19.63px] "
           >
             About Us
           </Text>
-          <div className="flex w-9 h-[29px]" />
+          {/* <div className="flex w-9 h-[29px]" /> */}
+          <Img src="images/img_svg.svg" alt="svg_one" className="h-[39px] scale-x-[-1]" />
         </div>
-        <Heading size="2xl" as="h1" className="mt-3">
+        <Heading size="2xl" as="h1" className="mt-3 ">
           G Nine
         </Heading>
         <Text
@@ -40,20 +58,6 @@ const AboutUs = () => {
         >
           rEAD mORE
         </Button>
-      </div>
-      <div className="flex flex-row justify-start w-[48%] bottom-0 left-[3%] m-auto absolute">
-        <div className="flex flex-row justify-start items-center w-full">
-          <Img
-            src="images/img_about_6_1_png.png"
-            alt="about61png_one"
-            className="w-[73%] object-cover"
-          />
-          <Img
-            src="images/img_about_6_2_png.png"
-            alt="about62png_one"
-            className="w-1/2 ml-[-198px] object-cover"
-          />
-        </div>
       </div>
     </div>
   );

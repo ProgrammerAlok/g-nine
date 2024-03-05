@@ -6,7 +6,7 @@ import { ContactUsForm } from "pages/ContactUs"
 const Home = () => {
   return (
     <HomeLayout title={'Home'} >
-        <main className='my-[4rem]' >
+        <main className='my-[4rem] md:my-[2rem] ' >
           <AboutUs />
           <OurService />
           <Gallery />

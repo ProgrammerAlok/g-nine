@@ -15,12 +15,12 @@ const AboutUs = () => {
     {
       heading: `Our Vision`,
       image: `images/img_pngwing_4.png`,
-      className: `gap-8 mt-[6rem]`,
+      className: `gap-8 mt-[6rem] md:mt-[4rem]`,
     },
     {
       heading: `Our Mission`,
       image: `images/img_pngwing_6.png`,
-      className: `gap-8 flex-row-reverse mb-[10rem]`,
+      className: `gap-8 flex-row-reverse mb-[10rem] md:mb-[5rem] `,
     },
   ].map((item) => ({
     ...item,
@@ -36,7 +36,7 @@ const AboutUs = () => {
           list={Data}
         />
 
-        <div className='flex flex-col justify-center items-center gap-[8rem] max-w-[1440px] w-[90%] mx-auto ' >
+        <div className='flex flex-col justify-center items-center gap-[8rem] md:gap-8 max-w-[1440px] w-[90%] mx-auto ' >
           {OurVisionMissionData.map((item, key) => (
             <Card key={key} {...item} />
           ))}
@@ -55,9 +55,9 @@ const Card = ({
 }) => {
   
   return (
-    <div key={key} className={`flex justify-between items-center ${className}`}>
-      <Img src={image} alt="pngwingfour_one" className={`w-[40%] object-cover ${key&2===1?'scale-x-[-1]':''}`} />
-      <div className="flex flex-col items-start justify-start w-[60%] gap-2.5">
+    <div key={key} className={`flex justify-between items-center md:flex-col ${className}`}>
+      <Img src={image} alt="pngwingfour_one" className={`w-[40%] md:w-full object-cover ${key&2===1?'scale-x-[-1]':''}`} />
+      <div className="flex flex-col items-start justify-start w-[60%] md:w-full gap-2.5">
         <Heading size="2xl" as="h3">
           {heading}
         </Heading>

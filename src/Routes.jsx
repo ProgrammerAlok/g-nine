@@ -15,8 +15,8 @@ import { Home, AboutUs, Banquet, ContactUs, Events, Faqs, Restaurant, Rooms } fr
 
 const ProjectRoutes = () => {
   let element = useRoutes([
-    { path: "/home", element: <Home /> },
-    { path: "/", element: <Home1 /> },
+    { path: "/", element: <Home /> },
+    // { path: "/", element: <Home1 /> },
     { path: "/aboutus", element: <AboutUs /> },
     { path: "/rooms", element: <Rooms /> },
     { path: "/banquet", element: <Banquet /> },

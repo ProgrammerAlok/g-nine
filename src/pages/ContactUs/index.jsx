@@ -13,7 +13,7 @@ const ContactUs = () => {
 
 export const ContactUsForm = () => {
   return (
-    <div className="flex flex-col items-center justify-center max-w-[1440px] w-[90%] mx-auto gap-[60px] px-14 py-20 bg-gray-100 rounded-[20px] mb-[8rem] ">
+    <div className="flex flex-col items-center justify-center max-w-[1440px] w-[90%] mx-auto gap-[60px] px-14 py-20 md:px-0 md:py-4 bg-gray-100 rounded-[20px] mb-[8rem] ">
       <div className="flex flex-col items-center justify-start w-[100%] gap-[11px]">
         <div className="flex flex-row justify-center items-center w-3/5 gap-2.5">
           <Img
@@ -30,19 +30,23 @@ export const ContactUsForm = () => {
               CONTACT US
             </Text>
           </a>
-          <div className="flex w-9 h-[29px]" />
+          <Img
+            src="images/img_svg.svg"
+            alt="svg_twentynine"
+            className="h-[39px] scale-x-[-1]"
+          />
         </div>
         <Heading size="2xl" as="h1">
           Get in Touch
         </Heading>
       </div>
-      <div className="flex flex-row justify-between items-center w-full">
+      <div className="flex md:flex-col md:gap-8 justify-between items-center w-full">
         <Img
           src="images/img_group_1000003806.svg"
           alt="image_four"
-          className="w-[40%] opacity-0.9"
+          className="w-[40%] md:w-full opacity-0.9"
         />
-        <div className="flex flex-col items-start justify-start w-[56%] gap-[30px]">
+        <div className="flex flex-col items-start justify-start w-[56%] md:w-full gap-[30px]">
           <div className="flex flex-col items-center justify-start w-full gap-5">
             <Input
               type="text"
@@ -70,7 +74,7 @@ export const ContactUsForm = () => {
             <TextArea
               name="group241"
               placeholder="Your message (optional)"
-              className="w-full text-gray-600_02 font-inter"
+              className="w-full text-gray-600_02"
             />
           </div>
           <Button

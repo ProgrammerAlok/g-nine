@@ -32,7 +32,7 @@ const TextArea = React.forwardRef(
     return (
       <textarea
         ref={ref}
-        className={`${className} ${shapes[shape] || ""} ${sizes[size] || ""} ${variants[variant] || ""}`}
+        className={`font-inter font-[400] text-[20px] leading-[28px] md:text-[16px] md:leading-[19.36px] ${className} ${shapes[shape] || ""} ${sizes[size] || ""} ${variants[variant] || ""}`}
         name={name}
         onChange={handleChange}
         placeholder={placeholder}

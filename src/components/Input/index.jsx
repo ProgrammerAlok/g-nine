@@ -40,7 +40,7 @@ const Input = React.forwardRef(
     return (
       <>
         <div
-          className={`${className} flex items-center justify-center text-gray-600_02 font-inter text-xl bg-white-A700 rounded-[10px] ${shapes[shape] || ""} ${variants[variant]?.[color] || variants[variant] || ""} ${sizes[size] || ""}`}
+          className={`${className} flex items-center justify-center text-gray-600_02 font-inter font-[400] text-[20px] leading-[28px] md:text-[16px] md:leading-[19.36px] bg-white-A700 rounded-[10px] ${shapes[shape] || ""} ${variants[variant]?.[color] || variants[variant] || ""} ${sizes[size] || ""}`}
         >
           {!!label && label}
           {!!prefix && prefix}

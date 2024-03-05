@@ -1,21 +1,16 @@
-import React from 'react'
 import { Button, Heading, Img, Text } from "components";
 import "./style.css";
 
-const HomeBanner = ({
-  NavBar,
-  NavItems
-}) => {
+const HomeBanner = ({ NavBar, NavItems }) => {
   return (
-    <div className="home-banner-wrapper h-[45rem] overflow-hidden ">
+    <div className="home-banner-wrapper h-[45rem] overflow-hidden relative ">
       <div className="max-w-[1440px] w-[90%] mx-auto  ">
-
         <NavBar NavItems={NavItems} />
 
         <div className="relative">
-
           <div className="relative ">
             <div className="w-[25rem] aspect-square bg-orange-400 shadow-bs rounded-[50%] absolute right-[16%] mt-[8.3%] overflow-hidden " />
+
             <div className="flex flex-row justify-end items-start w-[56%] right-0 top-[2%] m-auto absolute">
               <Img
                 src="images/img_div_slider_shape.png"
@@ -113,7 +108,6 @@ const HomeBanner = ({
                             </div>
                           </div>
                         </div>
-
                       </div>
                     </div>
                   </div>
@@ -165,11 +159,15 @@ const HomeBanner = ({
               inquiry now
             </Button>
           </div>
-
         </div>
       </div>
+      <Img
+        src="images/img_section_divider1_png_59x1920.png"
+        alt="section_three"
+        className="w-full object-cover absolute bottom-0 z-10 "
+      />
     </div>
-  )
-}
+  );
+};
 
-export default HomeBanner
+export default HomeBanner;

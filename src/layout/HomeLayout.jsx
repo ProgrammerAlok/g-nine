@@ -206,7 +206,7 @@ const HomeLayout1 = ({ title }) => {
   );
 };
 
-const HomeLayout = ({ title }) => {
+const HomeLayout = ({ children, title }) => {
 
   return (
     <>
@@ -214,13 +214,7 @@ const HomeLayout = ({ title }) => {
         <title>{title || 'GN'} - G Nine</title>         
       </Helmet>
       <HomeBanner NavBar={NavBar} NavItems={NavItems} />
-      
-
-      <div>
-        asdfsfsa
-      </div>
-
-
+      {children}
       <Footer />    
     </>
   );

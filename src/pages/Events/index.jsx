@@ -21,8 +21,8 @@ const Events = () => {
             <Heading as="h3" className="">
               Events Gallery
             </Heading>
-            <div className="flex flex-row w-full gap-[30px]">
-              <div className="flex flex-col items-center justify-start w-[49%] mb-[462px] gap-[30px]">
+            <div className="flex flex-row w-full gap-7 md:gap-3">
+              <div className="flex flex-col items-center justify-start w-[49%] mb-[462px] md:mb-0 gap-7 md:gap-3">
                 <Img
                   src="images/img_rectangle_1940.png"
                   alt="image"
@@ -39,7 +39,7 @@ const Events = () => {
                   className="w-full object-cover rounded-[20px]"
                 />
               </div>
-              <div className="flex flex-col items-center justify-start w-[49%] mt-[111px] gap-[30px]">
+              <div className="flex flex-col items-center justify-start w-[49%] mt-[111px] gap-7 md:gap-3">
                 <Img
                   src="images/img_rectangle_1941_986x705.png"
                   alt="image"

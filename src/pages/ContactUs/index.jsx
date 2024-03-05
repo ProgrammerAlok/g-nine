@@ -11,7 +11,7 @@ const ContactUs = () => {
   );
 };
 
-const ContactUsForm = () => {
+export const ContactUsForm = () => {
   return (
     <div className="flex flex-col items-center justify-center max-w-[1440px] w-[90%] mx-auto gap-[60px] px-14 py-20 bg-gray-100 rounded-[20px] mb-[8rem] ">
       <div className="flex flex-col items-center justify-start w-[100%] gap-[11px]">

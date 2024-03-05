@@ -153,11 +153,11 @@ export default function LandingPageOnePage() {
                 </div>
               </div>
               <C1LandingPageOneRowTwo className="flex flex-row justify-between w-1/2 left-[13%] top-[2%] m-auto absolute" />
-              <Img
+              {/* <Img
                 src="images/img_div_slider_shape_224x215.png"
                 alt="divslider_five"
                 className="h-56 w-[12%] bottom-0 right-0 left-0 m-auto object-cover absolute"
-              />
+              /> */}
               <div className="flex flex-col items-start justify-start w-[30%] bottom-[1%] right-[13%] m-auto absolute">
                 <div className="flex flex-row justify-between items-center w-[34%]">
                   <Img src="images/img_svg.svg" alt="svg_one" className="h-[39px]" />
@@ -237,7 +237,7 @@ export default function LandingPageOnePage() {
                 </Button>
               </div>
             </div>
-            <div className="h-[1112px] w-full mt-[119px] relative">
+            {/* <div className="h-[1112px] w-full mt-[119px] relative">
               <div className="flex flex-row justify-start items-start h-[1008px] w-full top-0 right-0 left-0 py-1.5 m-auto bg-[url(/public/images/img_section.png)] bg-cover bg-no-repeat absolute">
                 <div className="flex flex-col items-end justify-start w-full mb-36">
                   <Img
@@ -351,8 +351,8 @@ export default function LandingPageOnePage() {
                 alt="imagesix_one"
                 className="h-[263px] w-[13%] bottom-[14%] right-0 m-auto object-cover absolute"
               />
-            </div>
-            <div className="flex flex-row justify-between items-center w-full mt-[15px] max-w-[1439px]">
+            </div> */}
+            {/* <div className="flex flex-row justify-between items-center w-full mt-[15px] max-w-[1439px]">
               <div className="flex flex-col items-start justify-start w-[39%] gap-10">
                 <div className="flex flex-row justify-start w-full">
                   <div className="flex flex-col items-start justify-start w-full gap-[13px]">
@@ -418,8 +418,8 @@ export default function LandingPageOnePage() {
                   </Button>
                 </div>
               </div>
-            </div>
-            <div className="h-[757px] w-full mt-[73px] relative max-w-[1909px]">
+            </div> */}
+            {/* <div className="h-[757px] w-full mt-[73px] relative max-w-[1909px]">
               <Img
                 src="images/img_h2_shape2_png_237x100.png"
                 alt="h2shape2png"
@@ -517,9 +517,9 @@ export default function LandingPageOnePage() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="flex flex-col items-center justify-start w-full mt-[78px] gap-[120px]">
-              <div className="flex flex-row justify-between w-full max-w-[1534px]">
+              {/* <div className="flex flex-row justify-between w-full max-w-[1534px]">
                 <div className="flex flex-col items-center justify-start w-[46%] mb-[30px] gap-10">
                   <div className="flex flex-col items-start justify-start w-full gap-2.5">
                     <div className="flex flex-row justify-start items-center w-[32%] gap-2.5">
@@ -666,8 +666,8 @@ export default function LandingPageOnePage() {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="flex flex-row justify-end w-full max-w-[2011px]">
+              </div> */}
+              {/* <div className="flex flex-row justify-end w-full max-w-[2011px]">
                 <div className="h-[1033px] w-full relative">
                   <div className="flex flex-col items-center justify-center w-max h-max gap-[50px] left-0 bottom-0 right-0 top-0 m-auto absolute">
                     <div className="flex flex-col items-center justify-start w-[69%] gap-5">
@@ -764,9 +764,9 @@ export default function LandingPageOnePage() {
                     <div className="h-[203px] w-[203px] mt-[-40px] ml-[35px] bg-gray-100_02" />
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
-            <div className="flex flex-col items-center justify-center w-full mt-[120px] gap-[60px] px-14 py-20 bg-gray-100 max-w-[1439px] rounded-[20px]">
+            {/* <div className="flex flex-col items-center justify-center w-full mt-[120px] gap-[60px] px-14 py-20 bg-gray-100 max-w-[1439px] rounded-[20px]">
               <div className="flex flex-col items-center justify-start w-[30%] gap-[11px]">
                 <div className="flex flex-row justify-start items-center w-3/5 gap-2.5">
                   <Img src="images/img_svg.svg" alt="svg_twentynine" className="h-[39px]" />
@@ -805,7 +805,7 @@ export default function LandingPageOnePage() {
                   </Button>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <footer className="flex flex-col w-full">

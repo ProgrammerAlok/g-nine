@@ -21,13 +21,13 @@ const Faqs = () => {
           className="w-full object-cover rotate-180"
         />
       </div>
-      <div className="faq-container flex flex-row justify-end w-full max-w-[1440px] mx-auto bg-gray-100 py-10 ">
-        <div className="h-[45rem] w-full relative">
+      <div className="faq-container flex flex-row justify-end w-[90%] max-w-[1440px] mx-auto bg-gray-100 py-10 ">
+        <div className="h-[45rem] md:h-[38rem] w-full relative">
           {/* form & heading */}
           <div className="flex flex-col items-center justify-center w-full h-max gap-[50px] left-0 bottom-0 right-0 top-0 m-auto ">
-            <div className="flex flex-col items-center justify-start w-[69%] gap-5 relative">
-              <div className="flex flex-row justify-center w-[22%]">
-                <div className="flex flex-row justify-between items-center w-full">
+            <div className="flex flex-col items-center justify-start w-[69%] md:w-full gap-5 relative">
+              <div className="flex flex-col justify-center w-full gap-4">
+                <div className="flex flex-row justify-center md:justify-start gap-4 items-center w-full">
                   <Img
                     src="images/img_svg.svg"
                     alt="svg_one"
@@ -46,15 +46,16 @@ const Faqs = () => {
                     className="h-[29px]"
                   />
                 </div>
+
+                <Heading
+                  size="2xl"
+                  as="h2"
+                  className="text-center md:text-left"
+                >
+                  Frequently Asked And Questions
+                </Heading>
               </div>
-              <Heading
-                size="2xl"
-                as="h2"
-                className="text-center !leading-[90px]"
-              >
-                Frequently Asked And Questions{" "}
-              </Heading>
-              <div className="relative w-[75%] mx-auto">
+              <div className="relative w-[75%] md:w-full mx-auto">
                 <div className=" absolute z-50 w-full">
                   <Accordian />
                 </div>

@@ -13,7 +13,7 @@ import { useState } from "react";
 
 const Faqs = () => {
   return (
-    <div>
+    <div className='bg-gray-100'>
       <div>
         <Img
           src="images/img_section_divider1_png_59x1920.png"

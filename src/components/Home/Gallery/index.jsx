@@ -2,12 +2,12 @@ import { Button, Heading, Img, Text } from "components";
 
 const Gallery = () => {
   return (
-    <div className="flex flex-row justify-between items-center w-[90%] mx-auto mt-[15px] max-w-[1440px]">
-      <div className="flex flex-col items-start justify-start w-[39%] gap-10">
+    <div className="flex md:flex-col md:gap-4 justify-between items-center w-[90%] mx-auto max-w-[1440px] my-[5rem] md:my-5">
+      <div className="flex flex-col items-start justify-start w-[39%] md:w-full gap-10">
         <div className="flex flex-row justify-start w-full">
           <div className="flex flex-col items-start justify-start w-full gap-[13px]">
             <div className="flex flex-col items-start justify-start w-[41%] gap-[18px]">
-              <div className="flex flex-row justify-between items-center w-[73%]">
+              <div className="flex items-center gap-3">
                 <Img
                   src="images/img_svg.svg"
                   alt="svg_thirteen"
@@ -20,7 +20,11 @@ const Gallery = () => {
                 >
                   Events
                 </Text>
-                <div className="flex w-9 h-[29px]" />
+                <Img
+                  src="images/img_svg.svg"
+                  alt="svg_thirteen"
+                  className="h-[39px] scale-x-[-1]"
+                />
               </div>
               <Heading size="2xl" as="h1">
                 Gallery
@@ -55,8 +59,8 @@ const Gallery = () => {
           rEAD mORE
         </Button>
       </div>
-      <div className="flex flex-col items-center justify-start w-[57%] gap-5">
-        <div className="flex flex-row justify-start items-end w-full gap-5">
+      <div className="flex flex-col items-center justify-start w-[57%] md:w-full gap-5 md:gap-2">
+        <div className="flex flex-row justify-between items-end w-full">
           <Img
             src="images/img_rectangle_1929.png"
             alt="image"
@@ -73,12 +77,12 @@ const Gallery = () => {
             className="w-[27%] object-cover rounded-[10px]"
           />
         </div>
-        <div className="flex flex-row justify-start w-[10%] gap-[15px]">
-          <Button size="xs" shape="square" className="w-8">
-            <Img src="images/img_vector_yellow_900.svg" />
+        <div className="flex flex-row justify-center w-full">
+          <Button size="xs" shape="square" className="">
+            <Img src="images/img_vector_arrow.svg"  className={`h-10 md:h-6`} />
           </Button>
-          <Button size="xs" shape="square" className="w-8 rotate-[180deg]">
-            <Img src="images/img_vector_yellow_900.svg" />
+          <Button size="xs" shape="square" className=" rotate-[180deg]">
+            <Img src="images/img_vector_arrow.svg" className={`h-10 md:h-6`} />
           </Button>
         </div>
       </div>

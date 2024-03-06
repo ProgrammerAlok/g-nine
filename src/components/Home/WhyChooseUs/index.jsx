@@ -1,6 +1,6 @@
 import { Heading, Img, Text } from "components";
 
-const WhyChooseUs = () => {
+const WhyChooseUs1 = () => {
   return (
     <div className="h-[757px] mt-[73px] relative py-10 ">
       <Img
@@ -38,11 +38,6 @@ const WhyChooseUs = () => {
                       className="w-full z-[1] object-cover mb-[1rem]"
                     />
                     <div className="h-[669px] w-full mt-[-63px] relative">
-                      <Img
-                        src="images/img_pseudo_669x1439.png"
-                        alt="pseudo_three"
-                        className="justify-center h-[669px] w-full inset-0 m-auto object-cover absolute"
-                      />
                       <div className="flex flex-col items-end justify-start w-full gap-16 bottom-0 right-0 left-0 m-auto absolute">
                         <div className="flex flex-row justify-start items-center w-[70%] mr-6 gap-[46px]">
                           <div className="flex flex-col items-start justify-start w-4/5 gap-[19px]">
@@ -131,4 +126,88 @@ const WhyChooseUs = () => {
   );
 };
 
-export default WhyChooseUs;
+export default function WhyChooseUs() {
+  return (
+    <div>
+      <div className=" max-w-[1440px] w-full mx-auto relative ">
+        <div className="w-[30%] md:w-full md:block hidden h-[12rem] mt-[5rem] ">
+          <Img
+            src="images/why-choose-us-image.svg"
+            className={` absolute w-[16rem] z-20 mt-[-5rem] left-[20%] `}
+          />
+          <Img
+            src="images/img_div_slider_shape_412x390.png"
+            className={` absolute w-[15rem] top-[-3rem] `}
+          />
+        </div>
+        <div className="w-[80%] md:w-[90%] ml-auto md:mx-auto  flex md:flex-col bg-[#F9F6F1] py-14 bg-imgtransbg1 bg-cover bg-center bg-no-repeat md:p-4 ">
+          <div className="w-[30%] md:w-full md:hidden ">
+            <Img
+              src="images/why-choose-us-image.svg"
+              className={` absolute w-[30rem] md:w-[10rem] left-[5rem]  mt-[-5rem] z-20 `}
+            />
+            <Img
+              src="images/img_div_slider_shape_412x390.png"
+              className={` absolute w-[30rem] left-[-8rem] md:left-0 bottom-[-2rem] `}
+            />
+          </div>
+          <div className="w-[70%] md:w-full flex flex-col ">
+            {/* heading */}
+            <div className="flex flex-col items-start justify-start w-full gap-3">
+              <div className="flex flex-row justify-start items-center w-full gap-2.5">
+                <Img
+                  src="images/img_svg.svg"
+                  alt="svg_seventeen"
+                  className="h-[39px]"
+                />
+                <Text
+                  size="xl"
+                  as="p"
+                  className="!text-blue_gray-900_01 !font-inter !font-medium"
+                >
+                  Why Choose Us
+                </Text>
+                <Img
+                  src="images/img_svg.svg"
+                  alt="svg_seventeen"
+                  className="h-[39px] scale-x-[-1]"
+                />
+              </div>
+              <Heading size="2xl" as="h1">
+                One Guest at a Time
+              </Heading>
+            </div>
+
+            {/* text */}
+            <div className="flex flex-col items-center justify-start gap-2.5">
+              <Text size="md" as="p" className="!text-gray-500_05 !font-inter">
+                GNINE is a synonymous hotel with a world-class banquet facility,
+                lavish hotel rooms, and a multi-cuisine restaurant. A paradise
+                to break the monotony of the city hustle and relish the present
+                moments.
+              </Text>
+              <Text
+                size="md"
+                as="p"
+                className="w-[99%] !text-gray-500_05 !font-inter"
+              >
+                An experience of luxury with excellent 24×7* room service. A
+                restaurant with flavorous delicacy to delight you with every
+                bite.
+              </Text>
+              <Text
+                size="md"
+                as="p"
+                className="w-[99%] !text-gray-500_05 !font-inter"
+              >
+                A banquet with spacious to celebrate every occasion. An
+                exquisite property in the center of the city. GNINE is the
+                answer to all your hospitality needs.
+              </Text>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

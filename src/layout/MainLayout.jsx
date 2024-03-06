@@ -20,7 +20,7 @@ const MainLayout = ({
       <Helmet>
         <title>{title || "GN"} - G Nine</title>
       </Helmet>
-      {isOpen ? (
+      {!isOpen ? (
         <>
           <Banner title={title} image={image} toggle={toggle} />
           {children}

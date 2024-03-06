@@ -10,7 +10,7 @@ const Home = () => {
           <AboutUs />
           <OurService />
           <Gallery />
-          {/* <WhyChooseUs /> */}
+          <WhyChooseUs />
           <Testimonials />          
           <Faqs />
           <ContactUsForm />

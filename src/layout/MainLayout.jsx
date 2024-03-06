@@ -1,7 +1,8 @@
+import { useState } from "react";
 import { Heading, Img, Text } from "components";
 import Footer from "components/Footer";
 import { Helmet } from "react-helmet";
-import { NavBar, NavItems } from 'components/Nav';
+import { NavBar, NavBarSm, NavItems } from "components/Nav";
 import "./style.css";
 
 const MainLayout = ({
@@ -9,25 +10,36 @@ const MainLayout = ({
   title,
   image = `images/about-banner-image.svg`,
 }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  function toggle() {
+    setIsOpen(!isOpen);
+  }
+
   return (
     <>
       <Helmet>
         <title>{title || "GN"} - G Nine</title>
       </Helmet>
-      <Banner title={title} image={image} />
-      {children}
-      <Footer />
+      {isOpen ? (
+        <>
+          <Banner title={title} image={image} toggle={toggle} />
+          {children}
+          <Footer />
+        </>
+      ) : (
+        <NavBarSm toggle={toggle} />
+      )}
     </>
   );
 };
 
-const Banner = ({ title, image }) => {
+const Banner = ({ title, image, toggle }) => {
   return (
     <div>
       <div className="home-banner-wrapper h-[30rem] relative md:h-[15rem] ">
         <div className="max-w-[1440px] w-[90%] mx-auto ">
           {/* nav */}
-          <NavBar NavItems={NavItems} />
+          <NavBar NavItems={NavItems} toggle={toggle} />
 
           {/* heading */}
           <div className="flex flex-col items-end w-fit justify-start right-[40%] absolute">

@@ -35,6 +35,7 @@ module.exports = {
       backgroundImage: {
         gradient: "linear-gradient(90deg, #f08125,#00000000)",
         gradient1: "linear-gradient(270deg, #f08125,#d9d9d900)",
+        imgblack1: "url('/public/images/img_div_bg_image.png')"
       },
       opacity: { 0.9: 0.9, 0.3: 0.3, 0.5: 0.5, 0.2: 0.2 },
     },

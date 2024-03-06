@@ -36,7 +36,7 @@ const AboutUs = () => {
           list={Data}
         />
 
-        <div className='flex flex-col justify-center items-center gap-[8rem] md:gap-8 max-w-[1440px] w-[90%] mx-auto ' >
+        <div className="flex flex-col justify-center items-center gap-[8rem] md:gap-8 max-w-[1440px] w-[90%] mx-auto ">
           {OurVisionMissionData.map((item, key) => (
             <Card key={key} {...item} />
           ))}
@@ -46,17 +46,19 @@ const AboutUs = () => {
   );
 };
 
-const Card = ({
-  key,
-  image,
-  heading,
-  description,
-  className
-}) => {
-  
+const Card = ({ key, image, heading, description, className }) => {
   return (
-    <div key={key} className={`flex justify-between items-center md:flex-col ${className}`}>
-      <Img src={image} alt="pngwingfour_one" className={`w-[40%] md:w-full object-cover ${key&2===1?'scale-x-[-1]':''}`} />
+    <div
+      key={key}
+      className={`flex justify-between items-center md:flex-col ${className}`}
+    >
+      <Img
+        src={image}
+        alt="pngwingfour_one"
+        className={`w-[40%] md:w-full object-cover ${
+          key & (2 === 1) ? "scale-x-[-1]" : ""
+        }`}
+      />
       <div className="flex flex-col items-start justify-start w-[60%] md:w-full gap-2.5">
         <Heading size="2xl" as="h3">
           {heading}

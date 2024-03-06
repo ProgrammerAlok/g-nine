@@ -3,7 +3,8 @@ import { Img } from "components";
 import { HomeBanner } from "components/Home";
 import Footer from "components/Footer";
 import { Helmet } from "react-helmet";
-import { NavItems, NavBar } from "components/Nav";
+import { NavItems, NavBar, NavBarSm } from "components/Nav";
+import { useState } from "react";
 
 const HomeLayout1 = ({ title }) => {
   return (
@@ -207,15 +208,25 @@ const HomeLayout1 = ({ title }) => {
 };
 
 const HomeLayout = ({ children, title }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  function toggle() {
+    setIsOpen(!isOpen);
+  }
 
   return (
     <>
       <Helmet>
-        <title>{title || 'GN'} - G Nine</title>         
+        <title>{title || "GN"} - G Nine</title>
       </Helmet>
-      <HomeBanner NavBar={NavBar} NavItems={NavItems} />
-      {children}
-      <Footer />    
+      {!isOpen ? (
+        <>
+          <HomeBanner NavBar={NavBar} NavItems={NavItems} toggle={toggle} />
+          {children}
+          <Footer />
+        </>
+      ) : (
+        <NavBarSm toggle={toggle} />
+      )}
     </>
   );
 };

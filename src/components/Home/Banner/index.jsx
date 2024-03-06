@@ -1,11 +1,11 @@
 import { Button, Heading, Img, Text } from "components";
 import "./style.css";
 
-const HomeBanner = ({ NavBar, NavItems }) => {
+const HomeBanner = ({ NavBar, NavItems, toggle }) => {
   return (
     <div className="home-banner-wrapper h-[43rem] md:h-[38rem] relative overflow-hidden ">
       <div className="max-w-[1440px] w-[90%] mx-auto  ">
-        <NavBar NavItems={NavItems} />
+        <NavBar NavItems={NavItems} toggle={toggle} />
 
         <div className="flex md:flex-col justify-between mt-16 md:mt-2 md:gap-8">
           {/* left */}

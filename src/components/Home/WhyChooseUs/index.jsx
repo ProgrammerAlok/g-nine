@@ -2,7 +2,7 @@ import { Heading, Img, Text } from "components";
 
 const WhyChooseUs = () => {
   return (
-    <div className="h-[757px] w-[90%] mt-[73px] relative max-w-[1440px] mx-auto ">
+    <div className="h-[757px] mt-[73px] relative py-10 ">
       <Img
         src="images/img_h2_shape2_png_237x100.png"
         alt="h2shape2png"
@@ -24,29 +24,30 @@ const WhyChooseUs = () => {
                   className="w-full object-cover"
                 />
               </div>
-              <div className="flex flex-row justify-start items-center w-[93%] ml-[-241px]">
+              <div className="flex flex-row justify-start items-center w-[93%] ml-[-241px] ">
                 <Img
                   src="images/img_offer_img_png.png"
                   alt="offerimgpng_one"
                   className="w-[35%] z-[1] object-cover"
                 />
-                <div className="h-[670px] w-[82%] ml-[-285px] relative">
+                <div className="h-[670px] w-full ml-[-285px] relative">
                   <div className="flex flex-col items-center justify-center w-full h-full left-0 bottom-0 right-0 top-0 m-auto absolute">
                     <Img
                       src="images/img_section_divider1_png_64x1421.png"
                       alt="section_seven"
-                      className="w-[99%] z-[1] object-cover"
+                      className="w-full z-[1] object-cover mb-[1rem]"
                     />
                     <div className="h-[669px] w-full mt-[-63px] relative">
                       <Img
                         src="images/img_pseudo_669x1439.png"
                         alt="pseudo_three"
-                        className="justify-center h-[669px] w-full left-0 bottom-0 right-0 top-0 m-auto object-cover absolute"
+                        className="justify-center h-[669px] w-full inset-0 m-auto object-cover absolute"
                       />
-                      <div className="flex flex-col items-end justify-start w-[99%] gap-16 bottom-0 right-0 left-0 m-auto absolute">
+                      <div className="flex flex-col items-end justify-start w-full gap-16 bottom-0 right-0 left-0 m-auto absolute">
                         <div className="flex flex-row justify-start items-center w-[70%] mr-6 gap-[46px]">
                           <div className="flex flex-col items-start justify-start w-4/5 gap-[19px]">
-                            <div className="flex flex-col items-start justify-start w-[81%] gap-3">
+                            {/* heading */}
+                            <div className="flex flex-col items-start justify-start w-full gap-3">
                               <div className="flex flex-row justify-start items-center w-[41%] gap-2.5">
                                 <Img
                                   src="images/img_svg.svg"
@@ -60,12 +61,18 @@ const WhyChooseUs = () => {
                                 >
                                   Why Choose Us
                                 </Text>
-                                <div className="flex w-9 h-[29px]" />
+                                <Img
+                                  src="images/img_svg.svg"
+                                  alt="svg_seventeen"
+                                  className="h-[39px] scale-x-[-1]"
+                                />
                               </div>
                               <Heading size="2xl" as="h1">
                                 One Guest at a Time
                               </Heading>
                             </div>
+
+                            {/* text */}
                             <div className="flex flex-col items-center justify-start gap-2.5">
                               <Text
                                 size="md"
@@ -99,12 +106,11 @@ const WhyChooseUs = () => {
                               </Text>
                             </div>
                           </div>
-                          <div className="h-40 w-[16%] bg-gray-100" />
                         </div>
                         <Img
                           src="images/img_section_divider1_png_64x1421.png"
                           alt="section_nine"
-                          className="w-full object-cover"
+                          className="w-full object-cover rotate-180"
                         />
                       </div>
                     </div>

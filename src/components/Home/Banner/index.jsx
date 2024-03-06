@@ -3,15 +3,15 @@ import "./style.css";
 
 const HomeBanner = ({ NavBar, NavItems }) => {
   return (
-    <div className="home-banner-wrapper h-[50rem] overflow-hidden relative ">
+    <div className="home-banner-wrapper h-[43rem] md:h-[38rem] relative overflow-hidden ">
       <div className="max-w-[1440px] w-[90%] mx-auto  ">
         <NavBar NavItems={NavItems} />
 
-        <div className="relative">
+        <div className="flex md:flex-col justify-between mt-16 md:mt-2 md:gap-8">
           {/* left */}
-          <div className="flex flex-col items-start justify-start w-2/5 gap-[30px] left-0 mt-[8%] m-auto absolute">
-            <div className="flex flex-col items-start justify-start w-full gap-0.5">
-              <div className="flex flex-row justify-start items-center w-[55%] gap-3">
+          <div className="w-1/2 md:w-[75%] ">
+            <div className="flex flex-col items-start justify-start w-[60%] gap-0.5">
+              <div className="flex flex-row justify-start items-center w-full gap-3">
                 <Img
                   src="images/img_svg_white_a700.svg"
                   alt="svg_five"
@@ -20,7 +20,11 @@ const HomeBanner = ({ NavBar, NavItems }) => {
                 <Text size="lg" as="p" className="!text-yellow-900 !font-inter">
                   Simply Delicious!
                 </Text>
-                <div className="flex w-9 h-[29px]" />
+                <Img
+                  src="images/img_svg_white_a700.svg"
+                  alt="svg_five"
+                  className="h-[39px] scale-x-[-1]"
+                />
               </div>
               <div className="flex flex-row justify-start">
                 <Heading as="h1" className="!text-white-A700">
@@ -28,7 +32,7 @@ const HomeBanner = ({ NavBar, NavItems }) => {
                 </Heading>
               </div>
             </div>
-            <div className="flex flex-col items-start justify-start w-full gap-[13px] max-w-[417px]">
+            <div className="flex flex-col items-start justify-start w-full gap-2 max-w-[417px]">
               <Heading
                 size="xl"
                 as="h4"
@@ -39,7 +43,7 @@ const HomeBanner = ({ NavBar, NavItems }) => {
               <Text
                 size="3xl"
                 as="p"
-                className=" !text-white-A700 tracking-[2.00px] !font-inter capitalize text-center"
+                className=" !text-white-A700 tracking-[2.00px] !font-inter capitalize"
               >
                 Mon-sun: 11:00am to 11:00pm
               </Text>
@@ -47,116 +51,20 @@ const HomeBanner = ({ NavBar, NavItems }) => {
             <Button
               size="md"
               shape="round"
-              className="text-white-A700 font-poppins uppercase font-bold !border-2 min-w-[152px]"
+              className="text-white-A700 font-poppins uppercase font-bold !border-2 min-w-[152px] mt-3"
             >
               inquiry now
             </Button>
           </div>
 
           {/* right */}
-          <div className="flex flex-row justify-end items-start w-[56%] h-full right-0 bottom-0 z-10 m-auto absolute">
-            {/* <div className="w-[50%] aspect-square  absolute left-[20%] mt-[16.7%] overflow-hidden " /> */}
-            <Img
-              src="images/img_div_slider_shape.png"
-              alt="divslider_one"
-              className="w-[30%] mt-[100px] z-[1] object-cover"
-            />
-            <div className="flex flex-row justify-end items-start w-[86%] ml-[-198px]  ">
-              <div className='bg-orange-400 shadow-bs rounded-[50%] w-[50%] '>
-                <Img
-                  src="images/img_slider_dish_1_414x414_png.png"
-                  alt="sliderdishone"
-                  className="w-[50%] aspect-square mt-[150px] z-[1] rounded-[50%]"
-                />
+          <div className="w-1/2 md:w-[90%] md:ml-auto">
+            <div className="flex  w-fit">
+              <div>
+                <Img src="images/home-banner-img-1.svg" className={``} />
               </div>
-              <div className="flex flex-row justify-end items-center w-[69%] ml-[-184px]">
-                <Img
-                  src="images/img_div_slider_shape_197x324.png"
-                  alt="divslider_three"
-                  className="w-[55%] object-cover mt-[15rem]"
-                />
-                <div className="flex flex-col items-center justify-start w-[42%] ml-[-33px]">
-                  <div className="flex flex-col items-center justify-start w-full">
-                    <div className="flex flex-row justify-center items-start w-full">
-                      <div className="h-[35em] w-[72%] relative">
-                        <Img
-                          src="images/img_pseudo.png"
-                          alt="pseudo_one"
-                          className="justify-center h-[48rem] w-full left-0 bottom-0 right-0 top-0 m-auto object-cover absolute"
-                        />
-                        <div className="flex flex-col w-[66%] gap-[20rem] right-[9%] top-[0%] m-auto absolute">
-                          <div className="flex flex-col items-center justify-start w-[92%] mr-[7px] gap-1.5">
-                            <Img
-                              src="images/img_slider_dish_3_128x128_png.png"
-                              alt="salad_mixed_one"
-                              className="w-[80px] aspect-auto rounded-[50%]"
-                            />
-                            <div className="flex flex-col items-center justify-start w-[79%] gap-px">
-                              <Heading
-                                size="xs"
-                                as="h1"
-                                className="!text-black-900_01 text-center !text-[12.6px]"
-                              >
-                                Salad mixed
-                              </Heading>
-                              <Heading
-                                size="xs"
-                                as="h2"
-                                className="!text-black-900_01 text-center !text-[12.6px]"
-                              >
-                                fresh fruit
-                              </Heading>
-                            </div>
-                          </div>
-                          <div className="flex flex-col items-center justify-start w-[92%] ml-[7px] gap-1.5">
-                            <Img
-                              src="images/img_slider_dish_2_128x128_png.png"
-                              alt="sliderdishtwo"
-                              className="w-[80px] rounded-[50%]"
-                            />
-                            <div className="flex flex-col items-center justify-start w-[70%] gap-[3px]">
-                              <Heading
-                                size="xs"
-                                as="h3"
-                                className="!text-black-900_01 text-center !text-[12.6px]"
-                              >
-                                Salad with
-                              </Heading>
-                              <Heading
-                                size="xs"
-                                as="h4"
-                                className="!text-black-900_01 text-center !text-[12.6px]"
-                              >
-                                vegetables
-                              </Heading>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="flex flex-col items-center justify-start w-[62%] mt-[13rem] ml-[-68px] z-[1]">
-                        <div className="flex flex-col items-start justify-start w-full gap-2">
-                          <Img
-                            src="images/img_slider_dish_1_128x128_png.png"
-                            alt="sliderdishone"
-                            className="h-32 w-32 rounded-[50%]"
-                          />
-                          <div className="flex flex-row justify-start ml-2">
-                            <Heading
-                              size="md"
-                              as="h5"
-                              className="!text-black-900_01 text-center !font-bold !leading-[23px] underline"
-                            >
-                              Spicy veg
-                              <br />
-                              Italian pasta
-                            </Heading>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div>
+                <Img src="images/home-banner-img-2.svg" className={``} />
               </div>
             </div>
           </div>

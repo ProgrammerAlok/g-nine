@@ -8,9 +8,9 @@ const Home = () => {
     <HomeLayout title={'Home'} >
         <main className='my-[4rem] md:my-[2rem] ' >
           <AboutUs />
-          <OurService />
-          <Gallery />
-          <WhyChooseUs />
+          {/* <OurService />
+          <Gallery /> */}
+          {/* <WhyChooseUs /> */}
           <Testimonials />          
           <Faqs />
           <ContactUsForm />

@@ -14,6 +14,6 @@ a.active > p {
 
 @media screen and (max-width: 1050px) {
     .home-banner-wrapper {
-        background-size: 40vw 100vh, 60vw 100vh;
+        /* background-size: 40vw 100vh, 60vw 100vh; */
     }    
 }

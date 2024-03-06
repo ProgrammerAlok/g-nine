@@ -2,7 +2,7 @@ import { Heading, Img, RatingBar, Text } from "components";
 
 const Testimonials = () => {
   return (
-    <div className="flex md:flex-col-reverse justify-between w-[90%] max-w-[1440px] mx-auto ">
+    <div className="flex md:flex-col-reverse justify-between w-[90%] max-w-[1440px] mx-auto mt-[4rem] md:mt-0 ">
       {/* left */}
       <div className="flex flex-col items-center justify-start w-[46%] md:w-full mb-[30px] gap-10">
         <div className="flex flex-col items-start justify-start w-full gap-2.5">

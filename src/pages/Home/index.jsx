@@ -8,7 +8,7 @@ const Home = () => {
     <HomeLayout title={'Home'} >
         <main className=' w-full' >
           <AboutUs />
-          {/* <OurService /> */}
+          <OurService />
           <Gallery />
           {/* <WhyChooseUs /> */}
           <Testimonials />          
